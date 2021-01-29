@@ -75,3 +75,17 @@ function decreaseQuantity(id){
 //function to decrease quantity ends here
 
 
+//Booking Confirmation Starts Here
+
+document.getElementById("bookNow").addEventListener("click",function(){
+    const total=parseInt(document.getElementById("total").innerText);
+    if(total>0)
+    {
+        document.getElementById("totalAgain").innerText=total;
+        document.getElementById("mainContent").style.display="none";
+        document.getElementById("initiallyHidden").style.display = "block";
+    }
+})
+
+
+//Booking Confirmation Ends here

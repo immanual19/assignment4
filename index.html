@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,11 +28,11 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main class="main-content container" id="mainContent">
 
         <div class="booking-content">
             <h1>Mega City Bus</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="introduction">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
 
 
@@ -113,13 +114,22 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookNow" class="btn-style">Book Now</button>
         </div>
     </main>
 
     <!--Thank You-->
 
+    <div class="hiddenPart" id="initiallyHidden">
+        <h1>Congratulations. Ticket Successfully Booked!!!!</h1>
+        <p>You have successfully booked your bus ticket(s) with us. Please, carry printout.</p>
+        <p><strong>Total Amount (Including 10% VAT) : $ <span id="totalAgain">0</span></strong></p>
+        <h6>Have a safe journey.</h6>
+        <br>
+        <button type="button" class="btn btn-secondary">Download Ticket</button>
+    </div>
     <script src="interactive.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
