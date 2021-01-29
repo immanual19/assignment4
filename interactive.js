@@ -74,15 +74,4 @@ function decreaseQuantity(id){
 
 //function to decrease quantity ends here
 
-//Book Now starts here
 
-document.getElementById("bookNow").addEventListener("click",function(){
-    const total=parseInt(document.getElementById("total").innerText);
-    if(total!=0)
-    {
-        document.getElementById("bookingSection").style.display="none";
-        document.getElementById("showNow").style.display="block";
-    }
-})
-
-//Book Now ends here
